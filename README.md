@@ -1,5 +1,10 @@
-# UIXML
-Develop UIX panels in Resonite using XML
+<div align="center">
+  <img src="https://github.com/ultrawidegamer/UIXML/blob/main/logo.png" alt="logo" width="400" height="400">
+  <br><br>
+  <div>Develop UIX panels in Resonite using XML</div>
+</div>
+
+<br><br>
 
 # Elements
 
@@ -290,8 +295,10 @@ An element that, when enabled, disables all UI elements inside and shows a loadi
 | minwidth       | Float      | Minimum width of the layout. |
 | color          | ColorX     | Color of the loading spinner. |
 
+<br><br>
+<br><br>
 
-## Warnings
+## **WARNING:**
 
 - **Canvas** is the required root UIXML element.
 - All of the elements will have their attributes passed in as the string equivalent of their type.
