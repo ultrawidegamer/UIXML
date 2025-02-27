@@ -4,7 +4,18 @@
   <div>Develop UIX panels in Resonite using XML</div>
 </div>
 
-<br><br>
+<br>
+
+# How to Use 
+
+1. Spawn UIXML Parser in Resonite from my public folder (Items/UIXML) <br>
+resrec:///U-ultrawidegamer/R-b6fe258a-ca9f-4822-83b8-f7e6dba2c89b
+
+2. Start typing UIXML into the parser item or provide it with a URL to your hosted UIXML code
+
+3. Click generate to see your generated UIX panel
+
+<br>
 
 # Elements
 
