@@ -27,6 +27,11 @@ A wrapper for all UI elements, which allows rendering. The default content layou
 | padbottom      | Float      | Sets the bottom padding for the canvas. |
 | padleft        | Float      | Sets the left padding for the canvas. |
 
+```xml
+<canvas>
+  UIXML elements go in here
+</canvas>
+```
 
 ## Text
 Plain text to display static information.
@@ -44,6 +49,11 @@ Plain text to display static information.
 - **TextHorizontalAlignment**: left, center, right, justify
 - **TextVerticalAlignment**: top, middle, bottom
 
+```xml
+<canvas>
+  <text>Hello world</text>
+</canvas>
+```
 
 ## Button
 A simple clickable button for user interaction.
@@ -61,6 +71,11 @@ A simple clickable button for user interaction.
 - **TextHorizontalAlignment**: left, center, right, justify
 - **TextVerticalAlignment**: top, middle, bottom
 
+```xml
+<canvas>
+  <button>Hello world</button>
+</canvas>
+```
 
 ## Input
 A basic input field for string data input.
@@ -84,6 +99,11 @@ A basic input field for string data input.
 - **TextHorizontalAlignment**: left, center, right, justify
 - **TextVerticalAlignment**: top, middle, bottom
 
+```xml
+<canvas>
+  <input>Hello world</input>
+</canvas>
+```
 
 ## Checkbox
 A simple clickable box used for boolean data.
@@ -94,6 +114,11 @@ A simple clickable box used for boolean data.
 | minheight      | Float      | Minimum height of the checkbox. |
 | minwidth       | Float      | Minimum width of the checkbox. |
 
+```xml
+<canvas>
+  <checkbox></checkbox>
+<canvas>
+```
 
 ## Image
 Embeds an image into the UI.
@@ -104,6 +129,11 @@ Embeds an image into the UI.
 | minheight      | Float      | Minimum height of the image. |
 | minwidth       | Float      | Minimum width of the image. |
 
+```xml
+<canvas>
+  <image uri="resdb:///c7a9e00aa0455709d29524c627f698e7d26261f3d41ea0cbf50df50a3e28caac.webp"></image>
+</canvas>
+```
 
 ## Slider
 A range input that allows selecting a value between zero and one.
@@ -118,6 +148,11 @@ A range input that allows selecting a value between zero and one.
 ### Relevant Types:
 - **SliderFormat**: vertical, horizontal
 
+```xml
+<canvas>
+  <slider></slider>
+</canvas>
+```
 
 ## Datetime
 Displays a date or time in a specified format.
@@ -140,6 +175,11 @@ Displays a date or time in a specified format.
 - **TextHorizontalAlignment**: left, center, right, justify
 - **TextVerticalAlignment**: top, middle, bottom
 
+```xml
+<canvas>
+  <datetime></datetime>
+</canvas>
+```
 
 ## User Icon
 Displays a user's profile picture.
@@ -153,6 +193,11 @@ Displays a user's profile picture.
 ### Relevant Types:
 - **UserIconUser**: local, host, <any user id>
 
+```xml
+<canvas>
+  <usericon></usericon>
+</canvas>
+```
 
 ## Box
 A container that holds no content and can be used to organize UI elements.
@@ -161,6 +206,16 @@ A container that holds no content and can be used to organize UI elements.
 |-----------------|------------|-----------------|
 | minheight      | Float      | Minimum height of the box element. |
 | minwidth       | Float      | Minimum width of the box element. |
+
+```xml
+<canvas>
+  <vertical>
+    <box></box>
+    <image uri="resdb:///c7a9e00aa0455709d29524c627f698e7d26261f3d41ea0cbf50df50a3e28caac.webp"></image>
+    <box></box>
+  </vertical>
+</canvas>
+```
 
 ## Textarea
 A multi-line input field for longer text.
@@ -184,6 +239,13 @@ A multi-line input field for longer text.
 - **TextHorizontalAlignment**: left, center, right, justify
 - **TextVerticalAlignment**: top, middle, bottom
 
+```xml
+<canvas>
+  <textarea fontsize="30">
+    Hello, this is a piece of text that I will continue writing until the end of time. Yep, it's never going to end. I really hope you enjoy reading, because this is going to be a long one and I mean really long longer than anything you've probably ever read in your life. Longer than your brain could even hold in seventy lifetimes, even. Not that I’m calling you stupid or anything! Sorry, that came out wrong. What I mean to say is that this message is just very long, and I’m sure your brain is perfectly evolved enough to hold at least 7% of what this message might contain. You know, I’m actually getting kind of tired, so just kidding! The text won’t go on forever, and you won’t have to worry about needing to develop your brain any more than it already is. :)
+  </textarea>
+</canvas>
+```
 
 ## Scroll
 A scrollable container that holds multiple UI elements and allows for scrolling.
@@ -205,6 +267,24 @@ A scrollable container that holds multiple UI elements and allows for scrolling.
 - **LayoutHorizontalAlignment**: left, center, right, justify
 - **LayoutVerticalAlignment**: top, middle, bottom, justify
 
+```xml
+<canvas>
+  <scroll>
+    <text fontsize="30">Hello, this is a piece of text 1</text>
+    <text fontsize="30">Hello, this is a piece of text 2</text>
+    <text fontsize="30">Hello, this is a piece of text 3</text>
+    <text fontsize="30">Hello, this is a piece of text 4</text>
+    <text fontsize="30">Hello, this is a piece of text 5</text>
+    <text fontsize="30">Hello, this is a piece of text 6</text>
+    <text fontsize="30">Hello, this is a piece of text 7</text>
+    <text fontsize="30">Hello, this is a piece of text 8</text>
+    <text fontsize="30">Hello, this is a piece of text 9</text>
+    <text fontsize="30">Hello, this is a piece of text 10</text>
+    <text fontsize="30">Hello, this is a piece of text 11</text>
+    <text fontsize="30">Hello, this is a piece of text 12</text>
+  </scroll>
+</canvas>
+```
 
 ## Dialog
 An overlay element that shows a popup confirmation box.
@@ -223,6 +303,11 @@ An overlay element that shows a popup confirmation box.
 ### Relevant Types:
 - **DialogFormat**: confirm, alert
 
+```xml
+<canvas>
+  <dialog>text to show in dialog</dialog>
+</canvas>
+```
 
 ## Horizontal Layout
 A layout that organizes UI elements horizontally from left to right.
@@ -244,6 +329,15 @@ A layout that organizes UI elements horizontally from left to right.
 - **LayoutHorizontalAlignment**: left, center, right, justify
 - **LayoutVerticalAlignment**: top, middle, bottom, justify
 
+```xml
+<canvas>
+  <horizontal>
+    <text>one</text>
+    <text>two</text>
+    <text>three</text>
+  </horizontal>
+</canvas>
+```
 
 ## Vertical Layout
 A layout that organizes UI elements vertically from top to bottom.
@@ -265,6 +359,15 @@ A layout that organizes UI elements vertically from top to bottom.
 - **LayoutHorizontalAlignment**: left, center, right, justify
 - **LayoutVerticalAlignment**: top, middle, bottom, justify
 
+```xml
+<canvas>
+  <vertical>
+    <text>one</text>
+    <text>two</text>
+    <text>three</text>
+  </vertical>
+</canvas>
+```
 
 ## Overlapping Layout
 A layout where UI elements are layered on top of each other.
@@ -285,6 +388,15 @@ A layout where UI elements are layered on top of each other.
 - **LayoutHorizontalAlignment**: left, center, right, justify
 - **LayoutVerticalAlignment**: top, middle, bottom, justify
 
+```xml
+<canvas>
+  <overlapping>
+    <text>one</text>
+    <text>two</text>
+    <text>three</text>
+  </overlapping>
+</canvas>
+```
 
 ## Loading
 An element that, when enabled, disables all UI elements inside and shows a loading spinner.
@@ -294,6 +406,16 @@ An element that, when enabled, disables all UI elements inside and shows a loadi
 | minheight      | Float      | Minimum height of the layout. |
 | minwidth       | Float      | Minimum width of the layout. |
 | color          | ColorX     | Color of the loading spinner. |
+
+```xml
+<canvas>
+  <loading>
+    <text>one</text>
+    <text>two</text>
+    <text>three</text>
+  </loading>
+</canvas>
+```
 
 <br><br>
 
