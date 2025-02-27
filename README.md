@@ -296,9 +296,13 @@ An element that, when enabled, disables all UI elements inside and shows a loadi
 | color          | ColorX     | Color of the loading spinner. |
 
 <br><br>
-<br><br>
 
-## **WARNING:**
+# Project Name
+UIXML is a term that refers to both the process of generating a user interface from XML and the use of UIXML as a UIX language within a markdown format.
+
+<br>
+
+# **WARNING:**
 
 - **Canvas** is the required root UIXML element.
 - All of the elements will have their attributes passed in as the string equivalent of their type.
