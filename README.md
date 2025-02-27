@@ -171,7 +171,7 @@ Displays a date or time in a specified format.
 
 ### Relevant Types:
 - **DateTimeFormat**: date, time, datetime, timedate
-- **DateTimeUser**: host, local, <any user id>
+- **DateTimeUser**: host, local, any user id
 - **TextHorizontalAlignment**: left, center, right, justify
 - **TextVerticalAlignment**: top, middle, bottom
 
@@ -191,7 +191,7 @@ Displays a user's profile picture.
 | minwidth       | Float      | Minimum width of the user icon. |
 
 ### Relevant Types:
-- **UserIconUser**: local, host, <any user id>
+- **UserIconUser**: local, host, any user id
 
 ```xml
 <canvas>
